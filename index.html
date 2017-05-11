@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiples</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    
+</head>
+<body>
+    <div class="navi">
+        <div class="container naviborder">
+
+            <div class="navi-left col-sm-12 col-md-6 text-center">
+                <div class="navi-left-text1 col-sm-6 col-md-8 ">
+                    <a href="#">Assignment's</a>
+                </div> <!--close navi-left-text1-->
+                <div class="navi-left-text2 col-md-4 col-sm-4">
+                    <a href="#" id="prog">Programming</a>
+                </div> <!--close navi-left-text2-->
+            </div>
+
+            <div class="navi-right col-md-6 col-sm-12 ">
+                <!--<div class="navi-righ-hide">-->
+                <ul class="text-center" id="navi-right-hide-ul">
+                    <li><a href="#" onclick="home()">Home</a></li>
+                    <li><a href="#" onclick="java()">javaScript</a></li>
+                    <li><a href="#" onclick="html()">Html</a></li>
+                    <li><a href="#" onclick="css()" >Css</a></li>
+                </ul>
+                <!--</div>--> <!--close navi-righ-hide-->
+            </div> <!--close navi-right-->
+            <!--<div class="clear"></div>-->
+
+            <div class="Navi-mobil" id="Navi-mobil" >
+                <form>
+                    <div class="form-group">
+                        <label for="sel1"></label>                       
+                            <select class="form-control" id="sel1" onchange="showDiv(this)">                            
+                            <option value="0" selected>Menu</option>
+                            <option value="1">Home</option>
+                            <option value="2">javaScript</option>
+                            <option value="3">html</option>
+                            <option value="4">css</option>
+                        </select>
+                    </div>
+                </form>                
+            </div> <!--close Navi-mobil-->
+
+        </div> <!--close container-->
+    </div> <!--navi close-->
+
+
+
+<div class="parrallex" id="parapara">
+  <!--<div class="container"> --> 
+    <div class="container" id="parrallex-complt" >
+        
+        <div class="parrellex-left col-md-3 col-sm-3 col-xs-12 text-center ">
+           
+            <!--<ul id="java-ul" class="parrellex-left-hide-ul" name="jscript" onclick="showjsc(this)">-->
+            <ul id="java-ul" class="parrellex-left-hide-ul">
+                <li><a href="#" onclick="js_app1()">java 1</a></li>
+                <li><a href="#" onclick="js_app2()">java 2</a></li>
+                <li><a href="#" onclick="js_app3()">java 3</a></li>
+                <li><a href="#" onclick="js_app4()">java 4</a></li>
+                <li><a href="#" onclick="js_app5()">java 5</a></li>
+                <li><a href="#" onclick="js_app6()">java 6</a></li>
+                <li><a href="#" onclick="js_app7()">java 7</a></li>
+                <li><a href="#" onclick="js_app8()">java 8</a></li>
+                <li><a href="#" onclick="js_app9()">java 9</a></li>
+                <li><a href="#" onclick="js_app10()">java 10</a></li>    
+                <li><a href="#" onclick="js_app11()">java 11</a></li>
+                <li><a href="#" onclick="js_app12()">java 12</a></li>
+                <li><a href="#" onclick="js_app13()">java 13</a></li>
+                <li><a href="#" onclick="js_app14()">java 14</a></li>
+                <li><a href="#" onclick="js_app15()">java 15</a></li>
+                <li><a href="#" onclick="js_app16()">java 16</a></li>
+                <li><a href="#" onclick="js_app17()">java 17</a></li>
+                <li><a href="#" onclick="js_app18()">java 18</a></li>
+                <li><a href="#" onclick="js_app19()">java 19</a></li>
+                <li><a href="#" onclick="js_app20()">java 20</a></li> 
+                <li><a href="#" onclick="js_app21()">java 21</a></li>  
+            </ul>
+
+            <ul id="html-ul" class="parrellex-left-hide-ul">
+                <li><a href="#">Html 1</a></li>
+                <li><a href="#">Html 2</a></li>
+                <li><a href="#">Html 3</a></li>
+                <li><a href="#">Html 4</a></li>
+                <li><a href="#">Html 5</a></li>
+                <li><a href="#">Html 6</a></li>
+                <li><a href="#">Html 4</a></li>
+                <li><a href="#">Html 5</a></li>
+                <li><a href="#">Html 6</a></li>    
+            </ul>
+
+            <ul id="css-ul" class="parrellex-left-hide-ul">
+                <li><a href="#">css 1</a></li>
+                <li><a href="#">css 2</a></li>
+                <li><a href="#">css 3</a></li>
+                <li><a href="#">css 4</a></li>
+                <li><a href="#">css 5</a></li>
+                <li><a href="#">css 6</a></li>
+                <li><a href="#">css 4</a></li>
+                <li><a href="#">css 5</a></li>
+                <li><a href="#">css 6</a></li>    
+            </ul>
+            
+        </div> <!--parrellex-left close-->
+        
+
+        <div class="parrellex-right col-md-9 col-sm-9 col-xs-12 ">
+            <div id="working-area" class=" col-md-12">
+                 <div class="col-md-12 text-center container" >
+                     <h1 id="greeting">Hello world</h1>
+                </div> <!--greeting div-->
+            
+
+                     
+                <div id="js-app-1" class="js-app text-center">1
+                    <h4>Write a program to display the message</h4>
+                     <form name="jsForm" class="form-inline well" id="jsapp1_form" >
+                            <div class="form-group">                               
+                                <input type="text" class="form-control"  placeholder="Enter Ur Text" name="jsinput1">
+                                <input type="text" class="form-control"  placeholder="Number of time's" name="jsinput2">
+                                <button type="button" class="btn btn-default" onclick="hello()">Submit</button>
+                            </div>     
+                                
+                     </form>
+
+                    <div  class="alert-warning">
+                        <p id="js_demo1" style="text-align:center" class="alert-success">js App</p>
+                    </div> <!--close js_output-->
+                </div> <!--close js-app-1-->
+                    
+
+                <div id="js-app-2" class="js-app text-center">2
+                    <h4>Write a program to print numeric counting</h4>
+                     <form name="jsForm2" class="form-inline well"  >
+                            <div class="form-group">                               
+                                <input type="text" class="form-control"  placeholder="Number starts" name="jsinput1">
+                                <input type="text" class="form-control"  placeholder="Number Ends" name="jsinput2">
+                                <button type="button" class="btn btn-default" onclick="numeric()">Submit</button>
+                            </div>     
+                                
+                     </form>
+
+                    <div  class="alert-warning">
+                        <p id="js_demo2" style="text-align:center" class="alert-success">hack it</p>
+                    </div> <!--close js_output-->
+
+                </div> <!--close js-app-2-->
+
+
+                    <div id="js-app-3" class="js-app text-center">3
+                      <h4>Write a program to print multiplication table of any number using for loop.</h4>
+                     <form name="jsForm3" class="form-inline well"  >
+                            <div class="form-group">                     
+                                <input type="text" class="form-control"  placeholder="Enter Table" name="jsinput1">
+                                <input type="text" class="form-control"  placeholder="Table Starts" name="jsinput2">
+                                <input type="text" class="form-control"  placeholder="Table Ends" name="jsinput3">
+                                <button type="button" class="btn btn-default" onclick="tables()">Submit</button>
+                            </div>   
+                            
+                     </form>
+
+                    <div  class="alert-warning">
+                        <p id="js_demo3" style="text-align:center" class="alert-success">js App</p>
+                    </div> <!--close js_output-->
+
+                    </div> <!--close js-app-3-->
+
+
+            <div id="js-app-4" class="js-app text-center">4
+                <h4>Write each element on new line with the help of for loop..</h4>
+                    <form name="jsForm4" class="form-inline well"  >
+                        <div class="form-group">                               
+                            <input type="text" class="form-control"  placeholder="Enter Number Of Elements" name="jsinput1" >
+                            <button type="button" class="btn btn-default" onclick="newline()">Submit</button>
+                        </div>            
+                    </form>
+
+                    <div  class="alert-warning">
+                        <p id="js_demo4" style="text-align:center" class="alert-success">js App</p>
+                    </div> <!--close js_output-->
+
+            </div> <!--close js-app-4-->
+
+
+        <div id="js-app-5" class="js-app text-center">5
+            <h4>Write a program to print Index of the arrays</h4>
+                <form name="jsForm5" class="form-inline well"  >
+                    <div class="form-group">                               
+                        <input type="text" class="form-control"  placeholder="Enter Number Of Elements" name="jsinput1" >
+                        <button type="button" class="btn btn-default" onclick="showindexs()">Submit</button>
+                    </div>                                         
+                </form>
+                
+                <div  class="alert-warning">
+                    <p id="js_demo5" style="text-align:center" class="alert-success">js App</p>
+                </div> <!--close js_output-->
+
+        </div> <!--close js-app-5-->
+
+    <div id="js-app-6" class="js-app text-center">6
+        <h4>Write a program to initialize an array of N items by using prompt.</h4>
+                <form name="jsForm6" class="form-inline well" >
+                    <div class="form-group">                               
+                        <input type="text" class="form-control"  placeholder="Enter Number Of Elements" name="jsinput1" >
+                        <button type="button" class="btn btn-default" onclick="n_itmes()">Submit</button>
+                    </div>                                         
+                </form>
+
+                <div  class="alert-warning">
+                    <p id="js_demo6_2" style="text-align:center" class="alert-success">js App</p>
+                    <p id="js_demo6" style="text-align:center" class="alert-success">js App</p>
+                </div> <!--close js_output-->
+      </div> <!--close js-app-6-->
+
+      <div id="js-app-7" class="js-app text-center">7
+        <h4>Generate the following series in your browser. See example output.</h4>
+                <form name="jsForm7" class="form-inline well" >
+                    <div class="form-group">                               
+                        <input type="text" class="form-control"  placeholder="Enter Value I.e 10" name="jsinput1" >
+                        <button type="button" class="btn btn-default" onclick="g_series()">Submit</button>
+                    </div>                                       
+                </form>
+
+                <div  class="alert-warning">
+                    <p id="js_demo7h" style="text-align:center" class="alert-success"></p>
+                    <p id="js_demo7" style="text-align:center" class="alert-success"></p>
+                    <p id="js_demo7_2h" style="text-align:center" class="alert-success"></p>
+                    <p id="js_demo7_2" style="text-align:center" class="alert-success"></p>
+                    <p id="js_demo7_3h" style="text-align:center" class="alert-success"></p>
+                    <p id="js_demo7_3" style="text-align:center" class="alert-success"></p>
+                    <p id="js_demo7_4h" style="text-align:center" class="alert-success"></p>
+                    <p id="js_demo7_4" style="text-align:center" class="alert-success"></p>
+                    <p id="js_demo7_5h" style="text-align:center" class="alert-success"></p>
+                    <p id="js_demo7_5" style="text-align:center" class="alert-success"></p>
+                </div> <!--close js_output-->
+      </div> <!--close js-app-7-->
+
+      <div id="js-app-8" class="js-app text-center">8
+        <h4>“Search by user input”</h4>
+                <form name="jsForm8" class="form-inline well" >
+                    <div class="form-group">                               
+                        <input type="text" class="form-control"  placeholder="Search" name="jsinput1" >
+                        <button type="button" class="btn btn-default" onclick="cake_search()">Submit</button>
+                    </div>                                       
+                </form>
+
+                <div  class="alert-warning">    
+                    <p id="js_demo8" style="text-align:center" class="alert-success">Our products cake ,  apple pie ,  cookie , chips ,  patties </p>
+                </div> <!--close js_output-->
+
+      </div> <!--close js-app-8-->
+
+      <div id="js-app-9" class="js-app text-center">9
+        <h4>Write a program to Identify the largest number. Having some logical Error is someOne Can Solved it let me know</h4>
+                <form name="jsForm9" class="form-inline well"  >
+                    <div class="form-group">                               
+                        <input type="text" class="form-control"  placeholder="Enter Number Of Elements" name="jsinput1" >
+                        <button type="button" class="btn btn-default" onclick="larg_number()">Submit</button>   
+                    </div>                                      
+                </form>
+
+                <div  class="alert-warning"> 
+                    <p id="js_demo9" style="text-align:center" class="alert-success">js App</p>
+                    <p id="js_demo9_2" style="text-align:center" class="alert-success">large numbers</p>
+                </div> <!--close js_output-->
+      </div> <!--close js-app-9-->
+
+      <div id="js-app-10" class="js-app text-center">10
+        <h4>Write a program to Identify the smallest number. Having some logical Error is someOne Can Solved it let me know.</h4>
+                <form name="jsForm10" class="form-inline well"  >
+                    <div class="form-group">                               
+                        <input type="text" class="form-control"  placeholder="Enter Number Of Elements" name="jsinput1" >
+                        <button type="button" class="btn btn-default" onclick="smallest_numbr()">Submit</button>
+                    </div>                                              
+                </form>
+
+                <div  class="alert-warning">
+                    <p id="js_demo10" style="text-align:center" class="alert-success">js App</p>
+                    <p id="js_demo10_2" style="text-align:center" class="alert-success">Smallest Number</p>
+                </div> <!--close js_output-->
+      </div> <!--close js-app-10-->
+
+      <div id="js-app-11" class="js-app text-center">11
+        <h4>Write a program to print N-itme in array. Having some logical Error is someOne Can Solved it let me know</h4>
+                <form name="jsForm11" class="form-inline well"  >
+                    <div class="form-group">                               
+                        <input type="text" class="form-control"  placeholder="Enter Number Of Elements" name="jsinput1" >
+                        <button type="button" class="btn btn-default" onclick="small_large_number()">Submit</button>
+                    </div>                                        
+                </form>
+                <div  class="alert-warning">
+                    <p id="js_demo11" style="text-align:center" class="alert-success">js App</p>
+                    <p id="js_demo11_2" style="text-align:center" class="alert-success">Largest Number</p>
+                    <p id="js_demo11_3" style="text-align:center" class="alert-success">Smallest Number</p>
+                </div> <!--close js_output-->
+      </div> <!--close js-app-11-->
+
+      <div id="js-app-12" class="js-app text-center">12
+        <h4>Write a program to Multiples of 5 ranging 1 to 100</h4>
+                <form name="jsForm12" class="form-inline well" >
+                    <div class="form-group">                               
+                        <input type="text" class="form-control"  placeholder="Enter Numbr Of Time i.e 20" name="jsinput1" >
+                        <button type="button" class="btn btn-default" onclick="multiple_range()">Submit</button>
+                    </div>                               
+                </form>
+                <div  class="alert-warning">                
+                    <p id="js_demo12" style="text-align:center" class="alert-success">js App</p>
+                </div> <!--close js_output-->
+       </div> <!--close js-app-12-->
+
+    <div id="js-app-13" class="js-app">
+        <p class="text-center">13</p>
+        <h4 class="text-center">Write a program to print HTML table in your browser using JS.</h4> 
+            <form name="jsForm13" class="form-inline well text-center"  >
+                <div class="form-group">                               
+                    <input type="text" class="form-control"  placeholder="Enter Number Of Students" name="jsinput1">
+                    <button type="button" class="btn btn-default" onclick="student_data()">Submit</button>
+                </div>                               
+                        
+            </form>
+                <!--<div  class="">-->
+ <p id="js_demo13" style="text-align:center" class="alert-success">It can Generate max 4 students Data</p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody class="alert-success">
+            <tr >
+                <td id="ist_n"></td>
+                <td id="ist_l"></td>
+                <td id="ist_s"></td>
+            </tr>
+            <tr>
+                <td id="sec_n"></td>
+                <td id="sec_l"></td>
+                <td id="sec_s"></td>
+            </tr>
+            <tr>
+                <td id="thrd_n"></td>
+                <td id="thrd_l"></td>
+                <td id="thrd_s"></td>
+            </tr>
+            <tr>
+                <td id="frth_n"></td>
+                <td id="frth_l"></td>
+                <td id="frth_s"></td>
+            </tr>
+        </tbody>
+    </table>
+        <!--</div>--> <!--close js_output-->
+</div> <!--close js-app-13-->
+
+        <div id="js-app-14" class="js-app text-center">14
+            <h4>Write a program to print N-itme in array. Having some logical Error is someOne Can Solved it let me know</h4>
+                <form name="jsForm14" class="form-inline well"  >
+                    <div class="form-group">                               
+                        <input type="text" class="form-control"  placeholder="Enter Number Of Elements" name="jsinput1" >
+                        <button type="button" class="btn btn-default" onclick="n_itmes()">Submit</button>
+                    </div>                                       
+                </form>
+                <div  class="alert-warning">
+                    <p id="js_demo14_2" style="text-align:center" class="alert-success">js App</p>
+                    <p id="js_demo14" style="text-align:center" class="alert-success">js App</p>
+                </div> <!--close js_output-->
+      </div> <!--close js-app-14-->
+
+      <div id="js-app-15" class="js-app text-center">15
+        <h4>Write each element on new line with the help of nested for loops. </h4>
+                <form name="jsForm15" class="form-inline well"  >      
+                    <button type="button" class="btn btn-default" onclick="js15teen()">Submit</button>
+                </form>
+                <div  class="alert-warning">
+                    <p id="js_demo15" style="text-align:center" class="alert-success">js App</p>
+                </div> <!--close js_output-->
+      </div> <!--close js-app-15-->
+
+      <div id="js-app-16" class="js-app text-center">16
+        <h4>Write a program to repeatedly print the value decreasing by 0.5 each time </h4>
+                <form name="jsForm16" class="form-inline well"  >
+                    <div class="form-group">                               
+                        <input type="text" class="form-control"  placeholder="Enter Value" name="jsinput1" >
+                        <button type="button" class="btn btn-default" onclick="js16teen()">Submit</button>
+                    </div>                                                                               
+                </form>
+
+                <div  class="alert-warning">        
+                    <p id="js_demo16" style="text-align:center" class="alert-success">js App</p>
+                </div> <!--close js_output-->
+      </div> <!--close js-app-16-->
+
+      <div id="js-app-17" class="js-app text-center">17
+        <h4>The even/odd reporter</h4>
+                <form name="jsForm17" class="form-inline well"  >
+                    <div class="form-group">                               
+                        <input type="text" class="form-control"  placeholder="Enter Starting Number" name="jsinput1" >
+                        <input type="text" class="form-control"  placeholder="Enter Ending Numbr" name="jsinput2" >
+                        <button type="button" class="btn btn-default" onclick="js17teen()">Submit</button>
+                    </div>                                                                            
+                </form>
+
+                <div  class="alert-warning">                   
+                    <p id="js_demo17" style="text-align:center" class="alert-success">js App</p>
+                </div> <!--close js_output-->
+      </div> <!--close js-app-17-->
+
+      <div id="js-app-18" class="js-app text-center">18
+        <h4>Write a program to calculate the product of the odd integers from 1 to 7. Having some logical Error is someOne Can Solved it let me know</h4>
+                <form name="jsForm18" class="form-inline well" > 
+                    <input type="text" class="form-control"  placeholder="Odd value 2 make 105 ? 4" name="jsinput1" >
+                    <button type="button" class="btn btn-default" onclick="js18teen()">Submit</button>
+                </form>
+                <div  class="alert-warning">                 
+                    <p id="js_demo18" style="text-align:center" class="alert-success">js App</p>
+                </div> <!--close js_output-->
+      </div> <!--close js-app-18-->
+
+      <div id="js-app-19" class="js-app text-center">19
+        <h4>Write a program to print N-itme in array</h4>
+                <form name="jsForm19" class="form-inline well"  >
+                    <div class="form-group">                              
+                        <input type="text" class="form-control"  placeholder="Enter starting value? " name="jsinput1">
+                        <input type="text" class="form-control"  placeholder="Enter Ending value? " name="jsinput2">
+                        <input type="text" class="form-control"  placeholder="Enter the shape ? " name="jsinput3">
+                        <button type="button" class="btn btn-default" onclick="js19teen()">Submit</button>
+                    </div>           
+                </form>
+                <div  class="alert-warning">
+                    <p id="js_demo19" style="text-align:left" class="alert-success"></p>
+                    <!--<p id="js_demo19_2" style="text-align:center" class="alert-success"></p>-->
+                </div> <!--close js_output-->
+      </div> <!--close js-app-19-->
+
+      <div id="js-app-20" class="js-app">
+          <p class="text-center">20</p>
+          <h4 class="text-center">Write a program to create the following patterns in your browser.</h4>
+            <form name="jsForm20" class="form-inline well text-center"  >
+                <div class="form-group">                              
+                    <input type="text" class="form-control"  placeholder="Enter starting Values ? " name="jsinput1">
+                    <input type="text" class="form-control"  placeholder="Enter Ending Values ? " name="jsinput2">
+                    <input type="text" class="form-control"  placeholder="Enter the shape ? " name="jsinput3">
+                    <button type="button" class="btn btn-default" onclick="js20teen()">Submit</button>
+                 </div>                        
+            </form>
+                     
+            <div  class="alert-warning"> 
+                <p id="demo_1shap"  class="alert-success" ></p>
+                <p id="demo_1shap2" style="text-align:center" class="alert-success" ></p>
+
+                <p id="demo_2shap"  class="alert-success" ></p>
+                <p id="demo_2shap2" style="text-align:center" class="alert-success" ></p>
+
+                <p id="demo_3shap"  class="alert-success" ></p>
+                <p id="demo_3shap2" style="text-align:center" class="alert-success" ></p>
+
+                <p id="demo_4shap"  class="alert-success" ></p>
+                <p id="demo_4shap2" style="text-align:center" class="alert-success" ></p>
+            </div> <!--close js_output-->
+        
+      </div> <!--close js-app-20-->
+
+      <!--------------------------------
+                Calculator 21
+      -------------------------------->
+
+      <div id="js-app-21" class="js-app">
+          <!--<p class="text-center">21</p>-->
+          <h4 class="text-center">CalCulator</h4><p class="text-center">21</p>
+          
+          <form name="calc" class="form-inline well text-center"  >  
+                    <div class="form-group">                               
+                        <input type="text" class="form-control"  placeholder="" name="jsinput">    
+                    </div>                                     
+                </form>
+                
+   <!-- <div  class="">-->
+        
+            <!-------------------------------------->   
+
+            <table class="tablea">
+                    <tr >
+                        <td class="fk"><button type="button" class="btn btn-primary btn-lg" onclick="number(value)" value="7" >7</button></td>
+                        <td class="fk"><button type="button" class="btn btn-primary btn-lg" onclick="number(value)" value="8" >8</button></td>
+                        <td class="fk"><button type="button" class="btn btn-primary btn-lg" onclick="number(value)" value="9" >9</button></td>
+                        <td class="fk"><button type="button" class="btn btn-primary btn-lg" onclick="number(value)" value="/" >/</button></td>
+                    </tr>
+
+                    <tr >
+                        <td class="fk"><button type="button" class="btn btn-primary btn-lg" onclick="number(value)" value="4" >4</button></td>
+                        <td class="fk"><button type="button" class="btn btn-primary btn-lg" onclick="number(value)" value="5" >5</button></td>
+                        <td class="fk"><button type="button" class="btn btn-primary btn-lg" onclick="number(value)" value="6" >6</button></td>
+                        <td class="fk"><button type="button" class="btn btn-primary btn-lg" onclick="number(value)" value="*" >x</button></td>
+                    </tr>
+
+                    <tr >
+                        <td class="fk"><button type="button" class="btn btn-primary btn-lg" onclick="number(value)" value="1" >1</button></td>
+                        <td class="fk"><button type="button" class="btn btn-primary btn-lg" onclick="number(value)" value="2" >2</button></td>
+                        <td class="fk"><button type="button" class="btn btn-primary btn-lg" onclick="number(value)" value="3" >3</button></td>
+                        <td class="fk"><button type="button" class="btn btn-primary btn-lg" onclick="number(value)" value="-" >-</button></td>
+                    </tr>
+
+                    <tr >
+                        <td class="fk"><button type="button" class="btn btn-primary btn-lg" onclick="number(value)" value="." >.</button></td>
+                        <td class="fk"><button type="button" class="btn btn-primary btn-lg" onclick="number(value)" value="0" >0</button></td>
+                        <td class="fk"><button type="button" class="btn btn-primary btn-lg" onclick="evalua()" >=</button></td>
+                        <td class="fk"><button type="button" class="btn btn-primary btn-lg" onclick="number(value)" value="+" >+</button></td>
+                    </tr>
+
+                    
+            </table>  
+            <table class="tablea">
+                    <tr>
+                        <td class="fk"><button type="button" id="clear" class="btn btn-primary  btn-block" onclick="cle(value)" value="">Clear</button></td>
+                    </tr>  
+            </table>        
+     </div> <!--close js_output-->
+        
+      <!--</div>--> <!--close js-app-21-->
+      
+  </div> <!--close working-area parrallex-->
+ 
+            <div id="logindiv" class=" col-md-10">
+                <div class="container">
+                    <h2>Dont worry whatever Case u Enter</h2>
+                    <h2>fayaz && fayaz</h2>
+                        <form name="loginForm">
+                            <div class="form-group">                              
+                                <input type="text" class="form-control"  placeholder="User Name" name="inputusr">
+                            </div>
+                                   
+                             <div class="form-group">    
+                                <input type="password" class="form-control"  placeholder="Password" name="inputpas">
+                             </div>   
+                             
+                             <div class="form-group">    
+                                <input type="text" class="form-control"  placeholder="Your Name" name="inputnme">
+                             </div>   
+                            <button type="button" class="btn btn-default" onclick="login()">Login</button>
+                        </form>
+                 </div>
+            </div> <!--close content-->
+
+    </div> <!--close parrellex-right-->
+    
+    </div> <!--close container-fluid-->
+  <!--</div>--> <!--container close-->
+</div><!--close parrallex-->
+
+<script>
+        var a = ["Nokia", "Samsung", "Huawei", "Sony", "Apple"];
+        var b= "U can Enter whatever U want I.e "+a;
+        document.getElementById("js_demo4").innerHTML = b;
+</script>
+</body>
+<script src="js/app.js"></script>
+</html>
